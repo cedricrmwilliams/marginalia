@@ -61,14 +61,15 @@ body {
 
 .site-tagline {
   margin: 0.3rem 0 0;
-  width: 100%;
-  max-width: 100%;
+  width: auto;
+  max-width: none;
   color: var(--muted-color);
   font-family: "Inter", sans-serif;
   font-weight: 300;
-  font-size: 0.98rem;
+  font-size: clamp(0.82rem, 1.8vw, 0.98rem);
   line-height: 1.35;
   letter-spacing: 0.01em;
+  white-space: nowrap;
 }
 
 main {
