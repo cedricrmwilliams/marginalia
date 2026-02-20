@@ -52,11 +52,20 @@ body {
   text-decoration: none;
 }
 
-.feed-subheading {
-  margin: 0.25rem 0 0.65rem;
+.site-brand {
+  display: inline-block;
+}
+
+.site-tagline {
+  margin: 0.3rem 0 0;
+  width: 100%;
+  max-width: 11ch;
+  color: var(--muted-color);
+  font-family: var(--font-heading);
+  font-weight: 300;
   font-size: 0.98rem;
-  line-height: 1.45;
-  letter-spacing: -0.015em;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
 }
 
 main {
