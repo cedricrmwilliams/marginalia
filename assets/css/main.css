@@ -4,6 +4,7 @@
   --text-color: #121212;
   --muted-color: #666;
   --max-content-width: 42rem;
+  --line-color: #e7e7e7;
 }
 
 * {
@@ -98,6 +99,37 @@ a:hover {
 .muted {
   color: var(--muted-color);
   font-size: 0.9em;
+}
+
+.post-feed {
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.post-feed-item {
+  margin: 0;
+  padding: 1rem 0 0.9rem;
+  border-top: 1px solid var(--line-color);
+}
+
+.post-feed-item:last-child {
+  border-bottom: 1px solid var(--line-color);
+}
+
+.post-feed-link {
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.post-feed-link:hover {
+  text-decoration: underline;
+}
+
+.post-feed-date {
+  margin: 0.25rem 0 0;
 }
 
 @media (max-width: 640px) {
