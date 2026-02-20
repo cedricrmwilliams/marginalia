@@ -1,0 +1,8 @@
+title: Marginalia
+description: Notes, field journal, and short essays by Cedric R. M. Williams
+url: https://marginalia.cedricrmwilliams.com
+
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+theme: null

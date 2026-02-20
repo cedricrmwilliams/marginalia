@@ -1,0 +1,115 @@
+:root {
+  --font-body: "Cormorant Garamond", serif;
+  --font-heading: "Inter", sans-serif;
+  --text-color: #121212;
+  --muted-color: #666;
+  --max-content-width: 42rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--text-color);
+  background: #fff;
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: clamp(1.2rem, 1rem + 0.5vw, 1.42rem);
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  width: min(100% - 2rem, var(--max-content-width));
+  margin-inline: auto;
+}
+
+.site-header,
+.site-footer {
+  padding: 1rem 0;
+}
+
+.site-title {
+  color: inherit;
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+main {
+  padding: 1.5rem 0 2rem;
+}
+
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 2.2rem 0 0.7rem;
+}
+
+main h1 {
+  font-size: clamp(1.85rem, 1.5rem + 1.4vw, 2.55rem);
+}
+
+main h2 {
+  font-size: clamp(1.45rem, 1.2rem + 0.95vw, 1.95rem);
+}
+
+main h3 {
+  font-size: clamp(1.25rem, 1.1rem + 0.7vw, 1.55rem);
+}
+
+main p,
+main li,
+main blockquote {
+  font-family: var(--font-body);
+}
+
+main p,
+main ul,
+main ol,
+main blockquote {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.11em;
+}
+
+a:hover {
+  text-decoration-thickness: 0.12em;
+}
+
+.muted {
+  color: var(--muted-color);
+  font-size: 0.9em;
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: min(100% - 1.5rem, var(--max-content-width));
+  }
+
+  main {
+    padding-top: 1rem;
+  }
+
+  body {
+    line-height: 1.66;
+  }
+}
