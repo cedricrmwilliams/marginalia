@@ -33,7 +33,7 @@ body {
 
 .site-header,
 .site-footer {
-  padding: 1rem 0;
+  padding: 0.75rem 0;
 }
 
 .site-title {
@@ -41,11 +41,26 @@ body {
   text-decoration: none;
   font-family: var(--font-heading);
   font-weight: 600;
+  font-size: clamp(1.9rem, 1.5rem + 1.6vw, 2.9rem);
+  text-transform: uppercase;
+  line-height: 1.05;
+  letter-spacing: 0.04em;
+  display: inline-block;
+}
+
+.site-title:hover {
+  text-decoration: none;
+}
+
+.feed-subheading {
+  margin: 0.25rem 0 0.65rem;
+  font-size: 0.98rem;
+  line-height: 1.45;
   letter-spacing: -0.015em;
 }
 
 main {
-  padding: 1.5rem 0 2rem;
+  padding: 1rem 0 2rem;
 }
 
 main h1,
@@ -102,14 +117,14 @@ a:hover {
 }
 
 .post-feed {
-  margin: 2rem 0 0;
+  margin: 0.2rem 0 0;
   padding: 0;
   list-style: none;
 }
 
 .post-feed-item {
   margin: 0;
-  padding: 1rem 0 0.9rem;
+  padding: 0.9rem 0 0.85rem;
   border-top: 1px solid var(--line-color);
 }
 
@@ -121,7 +136,9 @@ a:hover {
   text-decoration: none;
   font-family: var(--font-heading);
   font-weight: 500;
-  letter-spacing: -0.01em;
+  font-size: clamp(1.1rem, 1rem + 0.45vw, 1.35rem);
+  letter-spacing: -0.012em;
+  line-height: 1.25;
 }
 
 .post-feed-link:hover {
@@ -130,6 +147,14 @@ a:hover {
 
 .post-feed-date {
   margin: 0.25rem 0 0;
+}
+
+.post-feed-body {
+  margin-top: 0.6rem;
+}
+
+.post-feed-body > :last-child {
+  margin-bottom: 0;
 }
 
 @media (max-width: 640px) {

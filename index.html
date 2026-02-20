@@ -3,12 +3,17 @@ layout: default
 title: Home
 ---
 
+<p class="muted feed-subheading">Notes, field journal, and short essays</p>
+
 <section aria-label="Recent posts">
   <ol class="post-feed">
     {% for post in site.posts limit:12 %}
       <li class="post-feed-item">
         <a class="post-feed-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
         <p class="muted post-feed-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+        <div class="post-feed-body">
+          {{ post.content }}
+        </div>
       </li>
     {% endfor %}
   </ol>
