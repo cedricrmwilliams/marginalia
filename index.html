@@ -12,6 +12,7 @@ title: Home
         <div class="post-feed-body">
           {{ post.excerpt }}
         </div>
+        <p class="post-feed-more"><a href="{{ post.url | relative_url }}">Read more →</a></p>
       </li>
     {% endfor %}
   </ol>

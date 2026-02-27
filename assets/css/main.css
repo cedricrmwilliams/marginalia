@@ -170,6 +170,21 @@ a:hover {
   margin-bottom: 0;
 }
 
+.post-feed-more {
+  margin: 0.5rem 0 0;
+  font-family: var(--font-heading);
+  font-size: 0.92rem;
+  letter-spacing: 0.02em;
+}
+
+.post-feed-more a {
+  text-decoration: none;
+}
+
+.post-feed-more a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 640px) {
   .container {
     width: min(100% - 1.5rem, var(--max-content-width));
