@@ -7,3 +7,4 @@ permalink: /:year/:month/:day/:title/
 
 theme: null
 excerpt_separator: "<!--more-->"
+cloudflare_web_analytics_token: ""
