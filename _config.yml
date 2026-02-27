@@ -6,3 +6,4 @@ markdown: kramdown
 permalink: /:year/:month/:day/:title/
 
 theme: null
+excerpt_separator: "<!--more-->"

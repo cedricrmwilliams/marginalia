@@ -10,7 +10,7 @@ title: Home
         <a class="post-feed-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
         <p class="muted post-feed-date">{{ post.date | date: "%B %-d, %Y" }}</p>
         <div class="post-feed-body">
-          {{ post.content }}
+          {{ post.excerpt }}
         </div>
       </li>
     {% endfor %}
