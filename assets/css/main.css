@@ -171,8 +171,9 @@ a:hover {
 }
 
 .post-feed-more {
-  margin: 0.5rem 0 0;
-  font-family: var(--font-heading);
+  margin: 1rem 0 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
   font-size: 0.92rem;
   letter-spacing: 0.02em;
 }

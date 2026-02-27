@@ -6,13 +6,17 @@ title: Home
 <section aria-label="Recent posts">
   <ol class="post-feed">
     {% for post in site.posts limit:12 %}
+      {% assign excerpt_parts = post.content | split: "<!--more-->" %}
+      {% assign has_more = excerpt_parts.size > 1 %}
       <li class="post-feed-item">
         <a class="post-feed-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
         <p class="muted post-feed-date">{{ post.date | date: "%B %-d, %Y" }}</p>
         <div class="post-feed-body">
-          {{ post.excerpt }}
+          {{ excerpt_parts | first }}
         </div>
-        <p class="post-feed-more"><a href="{{ post.url | relative_url }}">Read more →</a></p>
+        {% if has_more %}
+          <p class="post-feed-more"><a href="{{ post.url | relative_url }}">Read more →</a></p>
+        {% endif %}
       </li>
     {% endfor %}
   </ol>
